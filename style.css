@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   background-color: rgba(0, 0, 0, 0.884);
@@ -228,21 +233,19 @@ span {
   font-weight: 500;
   padding: 20px;
 }
-.phone-number {
-  padding: 10px;
-}
 
 .contact-icons nav a {
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
   text-decoration: none;
-  background-color: #fff;
-  border-radius: 5px;
+  color: #fff;
+}
+.contact-icons{
+  padding: 20px;
 }
 
 .download{
     padding: 10px;
-    margin-top: 30px;
 }
 .download a{
   text-decoration: none;
@@ -250,4 +253,89 @@ span {
   color: #fff;
   padding:15px 30px;
   border-radius: 5px;
+}
+
+
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .header-tag,
+  .main-header,
+  #about,
+  .about-me .experience nav,
+  .portfolio-img,
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    width: 100%;
+    height: 300px;
+  }
+
+  .header-writeUp p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .header-writeUp h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .nav-tagFirst {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-img img {
+    height: auto;
+  }
+
+  .about-me h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .services,
+  .work,
+  .contact {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .download a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 900px) {
+  .main-header,
+  #about,
+  .portfolio-img,
+  .service-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
 }
